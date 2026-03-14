@@ -1,0 +1,355 @@
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Work+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-high": "#ebe8e3",
+              "on-secondary-container": "#785a1a",
+              "inverse-primary": "#ffb3ac",
+              "tertiary-fixed": "#fbddc7",
+              "inverse-on-surface": "#f3f0eb",
+              "on-primary-container": "#ff837a",
+              "on-error": "#ffffff",
+              "surface-tint": "#aa3530",
+              "tertiary": "#342416",
+              "primary-container": "#7b1113",
+              "background": "#fcf9f4",
+              "secondary-fixed": "#ffdea5",
+              "on-primary": "#ffffff",
+              "on-secondary": "#ffffff",
+              "on-surface-variant": "#58413f",
+              "surface-container-lowest": "#ffffff",
+              "secondary-fixed-dim": "#e9c176",
+              "primary-fixed": "#ffdad6",
+              "on-background": "#1c1c19",
+              "on-primary-fixed": "#410003",
+              "secondary": "#775a19",
+              "outline-variant": "#dfbfbc",
+              "on-tertiary-fixed-variant": "#574333",
+              "surface": "#fcf9f4",
+              "primary": "#570005",
+              "on-surface": "#1c1c19",
+              "on-secondary-fixed": "#261900",
+              "tertiary-container": "#4c392a",
+              "on-tertiary-fixed": "#28180b",
+              "error-container": "#ffdad6",
+              "tertiary-fixed-dim": "#dec1ac",
+              "surface-variant": "#e5e2dd",
+              "outline": "#8b716e",
+              "on-primary-fixed-variant": "#891c1b",
+              "primary-fixed-dim": "#ffb3ac",
+              "surface-container": "#f0ede9",
+              "inverse-surface": "#31302d",
+              "surface-container-low": "#f6f3ee",
+              "surface-container-highest": "#e5e2dd",
+              "surface-bright": "#fcf9f4",
+              "on-tertiary-container": "#bea28f",
+              "on-secondary-fixed-variant": "#5d4201",
+              "error": "#ba1a1a",
+              "on-tertiary": "#ffffff",
+              "surface-dim": "#dcdad5",
+              "on-error-container": "#93000a",
+              "secondary-container": "#fed488"
+            },
+            fontFamily: {
+              "headline": ["Newsreader", "serif"],
+              "body": ["Work Sans", "sans-serif"],
+              "label": ["Work Sans", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            font-size: 20px;
+        }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        .aspect-4-5 { aspect-ratio: 4 / 5; }
+        body { background-color: #fcf9f4; color: #1c1c19; font-family: 'Work Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- Announcement Bar -->
+<div class="bg-primary text-on-primary py-2.5 px-4 text-center">
+<p class="text-[10px] sm:text-xs tracking-[0.2em] font-label font-medium uppercase">
+            Exclusive website drops only • Store pieces via DM • Pre-order orders only
+        </p>
+</div>
+<!-- Header (TopNavBar) -->
+<header class="sticky top-0 z-50 bg-surface/80 backdrop-blur-xl border-b border-outline-variant/10">
+<nav class="max-w-[1320px] mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center gap-12 flex-1">
+<a class="font-headline text-3xl tracking-tight text-primary" href="#">Chinarkari</a>
+<div class="hidden lg:flex items-center gap-8">
+<a class="font-label text-[11px] tracking-[0.15em] uppercase font-medium hover:text-primary transition-colors" href="#">Shop</a>
+<a class="font-label text-[11px] tracking-[0.15em] uppercase font-medium hover:text-primary transition-colors" href="#">Collections</a>
+<a class="font-label text-[11px] tracking-[0.15em] uppercase font-medium hover:text-primary transition-colors" href="#">Heritage</a>
+<a class="font-label text-[11px] tracking-[0.15em] uppercase font-medium hover:text-primary transition-colors" href="#">Process</a>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<button class="flex items-center"><span class="material-symbols-outlined">search</span></button>
+<button class="flex items-center"><span class="material-symbols-outlined">person</span></button>
+<button class="flex items-center"><span class="material-symbols-outlined">favorite</span></button>
+<button class="flex items-center relative">
+<span class="material-symbols-outlined">shopping_bag</span>
+<span class="absolute -top-1 -right-1 bg-primary text-on-primary text-[8px] w-3.5 h-3.5 flex items-center justify-center rounded-full">0</span>
+</button>
+</div>
+</nav>
+</header>
+<main class="max-w-[1320px] mx-auto px-6 pb-24">
+<!-- Collection Hero -->
+<section class="py-20 text-center max-w-3xl mx-auto">
+<h1 class="font-headline text-6xl mb-6 italic">Shop All</h1>
+<p class="font-body text-on-surface-variant text-lg leading-relaxed">
+                Explore our handcrafted Kashmiri outfits featuring timeless embroidery, premium fabrics, and modern silhouettes designed for everyday elegance.
+            </p>
+</section>
+<!-- Filter/Sort Bar -->
+<section class="flex flex-col md:flex-row items-center justify-between py-8 border-t border-b border-outline-variant/20 mb-12">
+<div class="flex flex-wrap items-center gap-8 mb-6 md:mb-0">
+<button class="flex items-center gap-2 font-label text-[11px] uppercase tracking-widest font-semibold group">
+                    Price <span class="material-symbols-outlined text-[16px] group-hover:rotate-180 transition-transform">expand_more</span>
+</button>
+<button class="flex items-center gap-2 font-label text-[11px] uppercase tracking-widest font-semibold group">
+                    Size <span class="material-symbols-outlined text-[16px] group-hover:rotate-180 transition-transform">expand_more</span>
+</button>
+<button class="flex items-center gap-2 font-label text-[11px] uppercase tracking-widest font-semibold group">
+                    Fabric <span class="material-symbols-outlined text-[16px] group-hover:rotate-180 transition-transform">expand_more</span>
+</button>
+<button class="flex items-center gap-2 font-label text-[11px] uppercase tracking-widest font-semibold group">
+                    Color <span class="material-symbols-outlined text-[16px] group-hover:rotate-180 transition-transform">expand_more</span>
+</button>
+</div>
+<div class="flex items-center gap-8">
+<span class="font-label text-[11px] uppercase tracking-widest text-on-surface-variant">16 Products</span>
+<button class="flex items-center gap-2 font-label text-[11px] uppercase tracking-widest font-semibold">
+                    Sort by: Featured <span class="material-symbols-outlined text-[16px]">expand_more</span>
+</button>
+</div>
+</section>
+<!-- Product Grid (Exactly 16 Products - 4 rows of 4) -->
+<section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-16">
+<!-- Row 1 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-4-5 overflow-hidden bg-surface-container mb-4">
+<img alt="The Noor Pheran" class="w-full h-full object-cover transition-opacity duration-700 group-hover:opacity-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpYXlvq-_y-nj6Z-Whc91lMT3ebVbK_iZIEvM028mptHO3C-f64PxhfrN7NRHqmvaq_7MkbgUCw38UxD_5n3hrF5Ogc7jnSmN-5LhhiAJFNYIIegW5H7jWoy55oho5DNxKwImLarv9PLkTiXJqJ84oxnMElbbWdMMkQt81jUfPq-giPPR9638dt1nB2a30ca--RPgI5GMa9EUpYnb97exPm2B9RXoCJAir42VyjLgvwy1yPgnRd68ZcLSFfQoXzH7QDyxTRTxSGg"/>
+<img alt="The Noor Pheran Detail" class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-700 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_QUIILLrhS2OWaEjb5pBy6GPCJQ4g7nhJv__qNmeoq6h49BA169Zf6wcpEpUQJemKeWEnYwAo-CJcSnVDPZIKzyw233WkFQs9aAZOrgahYR5jI8uJcumS56Azhlds34uwv3kqsq-uV5OG8jv6v0G2nkCc3UV7IbUwvaS0ZXXWVKW-ZEbGKanrNGJDJRSBKLGwTU727H3S62rg_ht2cczjMe4mWS9codwImIc2TVs9XXosTB42bd9hgeRIrpaHg_sPsk_Igdpn7Q"/>
+<button class="absolute top-4 right-4 w-10 h-10 bg-white/80 backdrop-blur rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"><span class="material-symbols-outlined">favorite</span></button>
+</div>
+<div class="flex flex-col gap-1.5 px-1"><div class="flex justify-between items-start"><h3 class="font-headline text-xl">The Noor Pheran</h3><div class="flex items-center"><span class="material-symbols-outlined text-primary scale-75" style="font-variation-settings: 'FILL' 1;">star</span><span class="font-label text-[10px] mt-0.5">5.0</span></div></div><p class="font-label text-[12px] uppercase tracking-widest text-on-surface-variant">Silk with Tilla Work</p><p class="font-body font-medium mt-1">₹ 24,500</p></div>
+</div>
+<div class="group cursor-pointer">
+<div class="relative aspect-4-5 overflow-hidden bg-surface-container mb-4">
+<img alt="Gul-e-Gulzar Set" class="w-full h-full object-cover transition-opacity duration-700 group-hover:opacity-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUmrK38T8QcrpTEsq1PuX9R8p29ZMgrIRt64BnBRILeXXSDBg-_ntk7HtdQV4WiIhIQyUid6JgwmgCzhTidKAjGQwWt_xs8L-wIxZukSWs8biPxXPte17Lw7YLVEFc4cZP0W3fzZ3hlAgmpOGXI73HL_Jr40ch7NLZeCRfwN71IsLauCr7YAFG6N4JlfAxKG8CITRsKJXZetGxIPzol9FPyD7Vf7yRaAdMBmsrVDnhY7TOHGsHGOPnD93syxB1cBBDk7I3NFzO3g"/>
+<img alt="Detail" class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-700 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmODDdT2acvz4kzg7-gOxIbU_j8qdRZ0wbQztrcwB8E7YVLFQ3gjbr7vF4Xjs1zjB-JLHNyV_nH2M1yXJZJ0WGCT0bY5NcEZB9-LJC1fTko19XRseKAtjfD0hzc-6_QZhMrQ4nDyzFzobZJKw-7JPKX148BP0mQRVpidAsYTz9TpOb9EoGOqu1yYSy-XrNT1It2UKlaokqRVzyNIA0VmDxmn0JXRFmGia1DluQceLu3Kbq2FMdknxSNnAJ5FmjNJHmlv-8w2c0YA"/>
+<button class="absolute top-4 right-4 w-10 h-10 bg-white/80 backdrop-blur rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"><span class="material-symbols-outlined">favorite</span></button>
+</div>
+<div class="flex flex-col gap-1.5 px-1"><div class="flex justify-between items-start"><h3 class="font-headline text-xl">Gul-e-Gulzar Set</h3><div class="flex items-center"><span class="material-symbols-outlined text-primary scale-75" style="font-variation-settings: 'FILL' 1;">star</span><span class="font-label text-[10px] mt-0.5">5.0</span></div></div><p class="font-label text-[12px] uppercase tracking-widest text-on-surface-variant">Handcrafted Sozni Pashmina</p><p class="font-body font-medium mt-1">₹ 42,000</p></div>
+</div>
+<div class="group cursor-pointer">
+<div class="relative aspect-4-5 overflow-hidden bg-surface-container mb-4">
+<img alt="Sultan Velvet Coat" class="w-full h-full object-cover transition-opacity duration-700 group-hover:opacity-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_eMdg_SGgMCUbuUo9NY1njPjlY1N2azBhnNgO1aR0v9Su9-VF5KBWA-lT8nInqAZ830ULnHBrNiVtD1FDnww6LT08-c0v6jYVPkHYz3GQMIf19B70ojdOwbi13DhAGLwpHjuuogyT9jHkYqibnHAucapcrjePITxRO9wwnUDyuSTBrGqkoEWOqTTr7qFgEEVFysaOY31wgAjlYHHK1JoLKcDfG0aPfYeRege_Bre4p1SFuH14deU91WkMj6TmYbt724JMbKXIew"/>
+<img alt="Detail" class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-700 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9adZHLQnAxHdijGQ5AfVtg4IIV52Ead7t3kLcIVDIjQ5fO2QjhW-1Km-zWYx8BDDM7Xw7BIqEPCDEOzC5p28WUo2-7XK3YvjI8OQsHNKH6ogwb7yoZyDe4Pkl4dEOC5li9YzMK6L2bpR_bL2VNVbqjn4fqphta1zIwNaZpdMpodHG2OqWf84VF8hWFb46O0f7xRuQLn7scw7yu_eKFqIx6iPasiAp21kWXURGGoDQxD3RisEFTfuLQKhWmjwW_jvuG11iwJWwmA"/>
+<button class="absolute top-4 right-4 w-10 h-10 bg-white/80 backdrop-blur rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"><span class="material-symbols-outlined">favorite</span></button>
+</div>
+<div class="flex flex-col gap-1.5 px-1"><div class="flex justify-between items-start"><h3 class="font-headline text-xl">Sultan Velvet Coat</h3><div class="flex items-center"><span class="material-symbols-outlined text-primary scale-75" style="font-variation-settings: 'FILL' 1;">star</span><span class="font-label text-[10px] mt-0.5">4.9</span></div></div><p class="font-label text-[12px] uppercase tracking-widest text-on-surface-variant">Velvet with Heavy Tilla</p><p class="font-body font-medium mt-1">₹ 36,800</p></div>
+</div>
+<div class="group cursor-pointer">
+<div class="relative aspect-4-5 overflow-hidden bg-surface-container mb-4">
+<img alt="Firdaus Lawn Set" class="w-full h-full object-cover transition-opacity duration-700 group-hover:opacity-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAREONj0bEthkX3w-dhTN9yjt8si0VlsV4GRjlCv3MhzJaDYLH44yNYKR7qyAvuUHq3wclGpTl3BS8tn1WFTkFMMVu-jVzuYqm1oK0hGIOrCe2t75RvexmgFieJIk5AuNndTgT4rRQZtfEjkC0zq32_N-ONRGAt5pldHKGZfIKY8m94h8WAZuaDDYIdZtVKN1Ziz_zQPV1kM-wHv6YNQpC2k1zVJ7oAsa943aAQkusPiqLa1kk9LDeihy1hLptZeseY3DTdETNkbA"/>
+<img alt="Detail" class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-700 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5B5jZn8YWl6ijgXTY-uAvU1Buircq2pEh2iCcL84aUyBXHmu6Ny5xVIM5BRykcN3p3BaAK744FON6jMx94OZQX4iOHT8B95MtVVW17TrGzOjSAk2ZS0qVSx6bKX60oq0Jej5sIut7qOFDO91uzChZeF9nFI-ZlmhvB4vgggWEvIaz5vmfhYRrpKk6SbwXcCvXJbY23KM6qN7Z01mjBuohHpkabNC-hJeobaLWjCNQxY6Cz4kGtpbNSrFRn_GtW7iFLqyB8noF3A"/>
+<button class="absolute top-4 right-4 w-10 h-10 bg-white/80 backdrop-blur rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"><span class="material-symbols-outlined">favorite</span></button>
+</div>
+<div class="flex flex-col gap-1.5 px-1"><div class="flex justify-between items-start"><h3 class="font-headline text-xl">Firdaus Lawn Set</h3><div class="flex items-center"><span class="material-symbols-outlined text-primary scale-75" style="font-variation-settings: 'FILL' 1;">star</span><span class="font-label text-[10px] mt-0.5">5.0</span></div></div><p class="font-label text-[12px] uppercase tracking-widest text-on-surface-variant">Raw Silk Summer Collection</p><p class="font-body font-medium mt-1">₹ 21,200</p></div>
+</div>
+<!-- Row 2 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-4-5 overflow-hidden bg-surface-container mb-4">
+<img alt="Zeenat Silk Kurta" class="w-full h-full object-cover transition-opacity duration-700 group-hover:opacity-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAku3691NthTYAl2APrpCRXMe-eQYxRHYmJ1V73Z-0Fd5Yf6lbUOuhlVDsYqHhmEYS3EhHA6tQqAzcUuXmc_dO4PhvT6LOsYpSK0fcDHAklAdZn_cclXe5ZLWnhh-LVt6ML2BnHe6haTKTh_XZCOICJXcZunpp4gT3KhYefg7e--yHtdutswOaNbUzmiZsCMvFjWDWOQc-m29djTBkXsz30IacHoqnyTfPahAuL-81OIIyV4dHZE2j58jqK18DGWWxMUsddwS_lwQ"/>
+<button class="absolute top-4 right-4 w-10 h-10 bg-white/80 backdrop-blur rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"><span class="material-symbols-outlined">favorite</span></button>
+</div>
+<div class="flex flex-col gap-1.5 px-1"><div class="flex justify-between items-start"><h3 class="font-headline text-xl">Zeenat Silk Kurta</h3><div class="flex items-center"><span class="material-symbols-outlined text-primary scale-75" style="font-variation-settings: 'FILL' 1;">star</span><span class="font-label text-[10px] mt-0.5">5.0</span></div></div><p class="font-label text-[12px] uppercase tracking-widest text-on-surface-variant">Pure Mulberry Silk</p><p class="font-body font-medium mt-1">₹ 18,900</p></div>
+</div>
+<div class="group cursor-pointer">
+<div class="relative aspect-4-5 overflow-hidden bg-surface-container mb-4">
+<img alt="Mehtab Tilla Shawl" class="w-full h-full object-cover transition-opacity duration-700 group-hover:opacity-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSG1qjLKI4rjvU9e8FwoRM8-rx2mdP9f-FyWcIuo1yhQ7sTXrtGaH5oayhbs29J1H4MilPULCdXc-_CzdQFHa-IqIHQdd3KA798xXJhi5z5_VRlmEA-lLVobYPVgdhOeEVNQz8YHs0mw2ob8afSFiZkQS9j1i-5fJxjRDxtVh_hrFexoZGDM0CGChyWW0JAsCoYp38wNPEhYCJkqHWgNaWVvMA_x93mdX74F3qNUCDoCcbj853tCY7ljti6BhBXxB4QFylKEigIA"/>
+<button class="absolute top-4 right-4 w-10 h-10 bg-white/80 backdrop-blur rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"><span class="material-symbols-outlined">favorite</span></button>
+</div>
+<div class="flex flex-col gap-1.5 px-1"><div class="flex justify-between items-start"><h3 class="font-headline text-xl">Mehtab Tilla Shawl</h3><div class="flex items-center"><span class="material-symbols-outlined text-primary scale-75" style="font-variation-settings: 'FILL' 1;">star</span><span class="font-label text-[10px] mt-0.5">4.8</span></div></div><p class="font-label text-[12px] uppercase tracking-widest text-on-surface-variant">Pashmina Base</p><p class="font-body font-medium mt-1">₹ 55,000</p></div>
+</div>
+<div class="group cursor-pointer">
+<div class="relative aspect-4-5 overflow-hidden bg-surface-container mb-4">
+<img alt="Haya Linen Pheran" class="w-full h-full object-cover transition-opacity duration-700 group-hover:opacity-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBv3KR4q9iJ1TIBTXF8yb8CR8PhpjfwhdfOF_nfHa65IvNYQovSB05cpxC0WH7NdZv1Icn0NzM2BIJDglzE1-Wl1-Zenyjiv0K5XiG8KpzbCotIjtL8iJPgduiPgB54iFaGLb-PABtgAi8Y2OAGul7VFBmwM4_yAOpvUvtVcppK76lisUHkoUJm062oyIeY88-dH1GM0UTEJrG6e4r4jtBAhGZWpLjfb6mt7K27hVSE0G5pvneApWTTcDOE1Qaa1cWbrGFdtRhwGQ"/>
+<button class="absolute top-4 right-4 w-10 h-10 bg-white/80 backdrop-blur rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"><span class="material-symbols-outlined">favorite</span></button>
+</div>
+<div class="flex flex-col gap-1.5 px-1"><div class="flex justify-between items-start"><h3 class="font-headline text-xl">Haya Linen Pheran</h3><div class="flex items-center"><span class="material-symbols-outlined text-primary scale-75" style="font-variation-settings: 'FILL' 1;">star</span><span class="font-label text-[10px] mt-0.5">5.0</span></div></div><p class="font-label text-[12px] uppercase tracking-widest text-on-surface-variant">Summer Linen Collection</p><p class="font-body font-medium mt-1">₹ 14,500</p></div>
+</div>
+<div class="group cursor-pointer">
+<div class="relative aspect-4-5 overflow-hidden bg-surface-container mb-4">
+<img alt="Rooh Velvet Kurta" class="w-full h-full object-cover transition-opacity duration-700 group-hover:opacity-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3bQAToa41NJoVFz0icoMr4ncgAqNMKqmGRruMYGoNn31VHkUlTazUJuOqWn2ll8lDEyevpRcvGCC7cGpWRRN5przFQzOaFJH16-lQGEOlvk3q_rweZwoJOyjL2MccndOT9rtv2Aiciw5v_0w28JIvCe3-NqH1kCWljKLSKsl88Xbmhd1mXeYakTMjMBWy5FhjDwzqxN8BiIuCiAaVjfAFApAtnyWuQOoKFcc6KAsrkpjmOde2nC5d6BC1BFsrw3ZfpdjM6nOuzw"/>
+<button class="absolute top-4 right-4 w-10 h-10 bg-white/80 backdrop-blur rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"><span class="material-symbols-outlined">favorite</span></button>
+</div>
+<div class="flex flex-col gap-1.5 px-1"><div class="flex justify-between items-start"><h3 class="font-headline text-xl">Rooh Velvet Kurta</h3><div class="flex items-center"><span class="material-symbols-outlined text-primary scale-75" style="font-variation-settings: 'FILL' 1;">star</span><span class="font-label text-[10px] mt-0.5">4.9</span></div></div><p class="font-label text-[12px] uppercase tracking-widest text-on-surface-variant">Winter Luxe Velvet</p><p class="font-body font-medium mt-1">₹ 28,500</p></div>
+</div>
+<!-- Row 3 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-4-5 overflow-hidden bg-surface-container mb-4">
+<img alt="Afnan Silk Suit" class="w-full h-full object-cover transition-opacity duration-700 group-hover:opacity-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSX0WeuRhxBHMsarK2N-vSsZp3_1FUA7l9Pd7V8XWI1-OPAazqG5doh2Ps3upiamGWBiI_HSKC38eKwHY5o40BZ3Ur_wPTyg_EawrDqd_5LcEZAiaTDYLGhyP5dkBmQD5zlPtVyTLtDluaVInm4ePK4bYmsNLR0pabeMFIqhNdomwR0VO6Eo_zmjs4YorYnr9BA_EXVBGlw_F0X8CNKmwmtQQi-PujlT16NCppcmr0_j1Fw4o1OeUp_SQq_w1DyQh5f9-ZARh7UA"/>
+<button class="absolute top-4 right-4 w-10 h-10 bg-white/80 backdrop-blur rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"><span class="material-symbols-outlined">favorite</span></button>
+</div>
+<div class="flex flex-col gap-1.5 px-1"><div class="flex justify-between items-start"><h3 class="font-headline text-xl">Afnan Silk Suit</h3><div class="flex items-center"><span class="material-symbols-outlined text-primary scale-75" style="font-variation-settings: 'FILL' 1;">star</span><span class="font-label text-[10px] mt-0.5">5.0</span></div></div><p class="font-label text-[12px] uppercase tracking-widest text-on-surface-variant">Hand Embroidered Silk</p><p class="font-body font-medium mt-1">₹ 32,000</p></div>
+</div>
+<div class="group cursor-pointer">
+<div class="relative aspect-4-5 overflow-hidden bg-surface-container mb-4">
+<img alt="Nilofer Pheran" class="w-full h-full object-cover transition-opacity duration-700 group-hover:opacity-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDlbJb8yBBYBTSp6A_7aO4HuPoigisdnWYhBin2x6no5OSyqqIdqVOH606ZRmi93srs5eRF0By2OvVw0ceGHul1cuhwBKFHhRJO2lMhBzlkpi-RX0FAg1J0kwO1c15SYO0yIPxEEmdvusiYK_Wkv8u2hwTG62T48EJJFwB91NQB1r-9FNRdemdrlO_0fnrwqw3nZ_tmAx0sxhPlkb7ZJOo_r-lBXciuPGj3J_py1ck8DJCzqyzmCbUCoto7J7OMO2GrNK6TW8B1g"/>
+<button class="absolute top-4 right-4 w-10 h-10 bg-white/80 backdrop-blur rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"><span class="material-symbols-outlined">favorite</span></button>
+</div>
+<div class="flex flex-col gap-1.5 px-1"><div class="flex justify-between items-start"><h3 class="font-headline text-xl">Nilofer Pheran</h3><div class="flex items-center"><span class="material-symbols-outlined text-primary scale-75" style="font-variation-settings: 'FILL' 1;">star</span><span class="font-label text-[10px] mt-0.5">4.7</span></div></div><p class="font-label text-[12px] uppercase tracking-widest text-on-surface-variant">Linen Tilla Work</p><p class="font-body font-medium mt-1">₹ 16,800</p></div>
+</div>
+<div class="group cursor-pointer">
+<div class="relative aspect-4-5 overflow-hidden bg-surface-container mb-4">
+<img alt="Sahr Velvet Stole" class="w-full h-full object-cover transition-opacity duration-700 group-hover:opacity-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNc69W4PQXwp3OLIO0yGzAgP8Ni3obYSd3_4jekMW1LpHFgo7h6K6p1frKwUWYc-D4I3hyow5t25r3kvZgq6BFUP5cAuQWctp0FKtjROkev08ab_29s2NVdmpzQK6vMN_2xB-RjO-NrpN1bFCipL-2qgBtb4ii8Yk7pft0uLwXzTeAG5VP64t4o816fn2wutXI0CGF5xV3NWo3JRpNDtkVinYb75xEy2TsPAZnzle86lhEqB_sfwAEd0GKZHQ9U-Vj9sIHBfCQdw"/>
+<button class="absolute top-4 right-4 w-10 h-10 bg-white/80 backdrop-blur rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"><span class="material-symbols-outlined">favorite</span></button>
+</div>
+<div class="flex flex-col gap-1.5 px-1"><div class="flex justify-between items-start"><h3 class="font-headline text-xl">Sahr Velvet Stole</h3><div class="flex items-center"><span class="material-symbols-outlined text-primary scale-75" style="font-variation-settings: 'FILL' 1;">star</span><span class="font-label text-[10px] mt-0.5">5.0</span></div></div><p class="font-label text-[12px] uppercase tracking-widest text-on-surface-variant">Velvet Handwork</p><p class="font-body font-medium mt-1">₹ 12,500</p></div>
+</div>
+<div class="group cursor-pointer">
+<div class="relative aspect-4-5 overflow-hidden bg-surface-container mb-4">
+<img alt="Zaira Lawn Suit" class="w-full h-full object-cover transition-opacity duration-700 group-hover:opacity-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2hYawzSNDtzyfYOI6M8equrv7IbAJQdhstbakgUixi_a63T-Rs5iUHT1xI3ft6wP_9_Q2obS0BHWbomxxEYTFnGkjEEX1R813bmL692eTXYCrprH_uDz9dczm0pkslGiiWwH5fL3p6iQLkrDP5dkJ545vJtfvXi9htyBjVAROuutmUD6JK3gNONSH1E3MlHr4anAbPiWJCX64R8Gw3-egJe084NOujKEh2Vyizc5_htDce3nh1DVeJSoraHCMe4ZrZOTeaW4mlw"/>
+<button class="absolute top-4 right-4 w-10 h-10 bg-white/80 backdrop-blur rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"><span class="material-symbols-outlined">favorite</span></button>
+</div>
+<div class="flex flex-col gap-1.5 px-1"><div class="flex justify-between items-start"><h3 class="font-headline text-xl">Zaira Lawn Suit</h3><div class="flex items-center"><span class="material-symbols-outlined text-primary scale-75" style="font-variation-settings: 'FILL' 1;">star</span><span class="font-label text-[10px] mt-0.5">4.9</span></div></div><p class="font-label text-[12px] uppercase tracking-widest text-on-surface-variant">Lawn Cotton Collection</p><p class="font-body font-medium mt-1">₹ 9,500</p></div>
+</div>
+<!-- Row 4 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-4-5 overflow-hidden bg-surface-container mb-4">
+<img alt="Noor Tilla Jacket" class="w-full h-full object-cover transition-opacity duration-700 group-hover:opacity-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDA59X77OIRiXHgrI0-mMLXHgA1dUzmIQjrEcd6Hm7_pg2HqGEWAVBikfK2DyLYaf0z5GjmzMttEGoTvxvjm9U3-wNucspyrzRfi481YUvFlM7vR-XXBtnnkeE73PH6O7mwJmD9n4NfrOyEbCsAIeOyJ23VSqQaBKCqoa6qpd2h5Z8IIdAyJytA_1bWO0TlJjLKvHkT9hgHBhucx6HOEyBK2ujoW9-50nQSqLB_2obkDYXt0O6AyVYOGSAH8y94b9ldQGMHDQp6yw"/>
+<button class="absolute top-4 right-4 w-10 h-10 bg-white/80 backdrop-blur rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"><span class="material-symbols-outlined">favorite</span></button>
+</div>
+<div class="flex flex-col gap-1.5 px-1"><div class="flex justify-between items-start"><h3 class="font-headline text-xl">Noor Tilla Jacket</h3><div class="flex items-center"><span class="material-symbols-outlined text-primary scale-75" style="font-variation-settings: 'FILL' 1;">star</span><span class="font-label text-[10px] mt-0.5">5.0</span></div></div><p class="font-label text-[12px] uppercase tracking-widest text-on-surface-variant">Short Velvet Jacket</p><p class="font-body font-medium mt-1">₹ 21,000</p></div>
+</div>
+<div class="group cursor-pointer">
+<div class="relative aspect-4-5 overflow-hidden bg-surface-container mb-4">
+<img alt="Gul Pashmina Kurta" class="w-full h-full object-cover transition-opacity duration-700 group-hover:opacity-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8yIlAjfBvBrgP2Rnh2PvfBnorfelOZLJ1m7MiIX4VuBAUknr3UTtEx4TS4D-sx2nI5MGF4pXv0VOYeiS-WsW3ufRrk4LeMpYEdb0ru7JsPCiGCS7w0AfT69XAjlc_WQK-OnggPF7VxsQLLHurgJ4Oi4st-ZreJlJ61JlaXJfmN_5Quf6_YrH-VtkEZTY4l_Nyp9BjWrl5uZ7yjJbctUjutE8olemo8oRXCNSzbfLjbvTvZx0rJqgmUEfaGNeBbyKV7GxtNe1Qow"/>
+<button class="absolute top-4 right-4 w-10 h-10 bg-white/80 backdrop-blur rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"><span class="material-symbols-outlined">favorite</span></button>
+</div>
+<div class="flex flex-col gap-1.5 px-1"><div class="flex justify-between items-start"><h3 class="font-headline text-xl">Gul Pashmina Kurta</h3><div class="flex items-center"><span class="material-symbols-outlined text-primary scale-75" style="font-variation-settings: 'FILL' 1;">star</span><span class="font-label text-[10px] mt-0.5">4.9</span></div></div><p class="font-label text-[12px] uppercase tracking-widest text-on-surface-variant">Semi-Pashmina Base</p><p class="font-body font-medium mt-1">₹ 13,400</p></div>
+</div>
+<div class="group cursor-pointer">
+<div class="relative aspect-4-5 overflow-hidden bg-surface-container mb-4">
+<img alt="Afreen Silk Pheran" class="w-full h-full object-cover transition-opacity duration-700 group-hover:opacity-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAH_V-OHlUaE5zJwFRMog7onTtkz_XAzmUtjxs1h42tB8myqBRBoRgqAFW84gmldVT98RpxlfPSIgJHEPuo3XzjTehX4ADEHUZnlWqq5rM_nhnIP-CHwGXPtAdHyR5UUVzeYIChb6Qt-h-jwF1WZkQTVRvr_D_ySB5wLR3398acdY7u6GUGe9ufDFc7MpBxbzxvVsnBpq6VasaRNw1Ppb3bjEcA3jyXGHNBzTXYFgEY9U7fZKHpSV6mYFSrFRhug2wugZHr5yVZGg"/>
+<button class="absolute top-4 right-4 w-10 h-10 bg-white/80 backdrop-blur rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"><span class="material-symbols-outlined">favorite</span></button>
+</div>
+<div class="flex flex-col gap-1.5 px-1"><div class="flex justify-between items-start"><h3 class="font-headline text-xl">Afreen Silk Pheran</h3><div class="flex items-center"><span class="material-symbols-outlined text-primary scale-75" style="font-variation-settings: 'FILL' 1;">star</span><span class="font-label text-[10px] mt-0.5">5.0</span></div></div><p class="font-label text-[12px] uppercase tracking-widest text-on-surface-variant">Royal Silk Heritage</p><p class="font-body font-medium mt-1">₹ 26,500</p></div>
+</div>
+<div class="group cursor-pointer">
+<div class="relative aspect-4-5 overflow-hidden bg-surface-container mb-4">
+<img alt="Saba Lawn Suit" class="w-full h-full object-cover transition-opacity duration-700 group-hover:opacity-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfbA677CLOY635GeEgzspyP2OaPESr1ea0PY75BOIFT6Mk34GfMjA7_SF5IRDLcjkOhwRGydON7RIyNPY2-VVUnZQrA-qHs7xUJP9VDqiD7RSXH9xYngP6T7nqmjPOhSXfVXBEOLKaEQm6AaaRiHiyVSPMBMumgCM9cfhsB3qhsInLIXSoYW5CO-apBZfzT7P75242khTtRhLdDwWrAnGyifTx6DfDsS2wzTYIwE1utRm06g_78m_JIezvs3HkDm5crVIDkae6uw"/>
+<button class="absolute top-4 right-4 w-10 h-10 bg-white/80 backdrop-blur rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"><span class="material-symbols-outlined">favorite</span></button>
+</div>
+<div class="flex flex-col gap-1.5 px-1"><div class="flex justify-between items-start"><h3 class="font-headline text-xl">Saba Lawn Suit</h3><div class="flex items-center"><span class="material-symbols-outlined text-primary scale-75" style="font-variation-settings: 'FILL' 1;">star</span><span class="font-label text-[10px] mt-0.5">4.8</span></div></div><p class="font-label text-[12px] uppercase tracking-widest text-on-surface-variant">Cotton Lawn Printed</p><p class="font-body font-medium mt-1">₹ 8,900</p></div>
+</div>
+</section>
+<!-- SEO Content Section -->
+<section class="mt-32 py-20 border-t border-outline-variant/20 grid lg:grid-cols-2 gap-16">
+<div>
+<h2 class="font-headline text-4xl mb-8 leading-tight">About Our Kashmiri Clothing Collection</h2>
+<div class="space-y-6 font-body text-on-surface-variant leading-relaxed">
+<p>At Chinarkari, we bridge the gap between age-old Kashmiri traditions and modern sartorial needs. Each piece in our collection is a tribute to the valley's rich textile heritage, meticulously handcrafted by master artisans whose skills have been passed down through generations.</p>
+<p>Our embroidery techniques ranging from the delicate <span class="text-primary italic">Sozni</span> (needle-work) to the majestic <span class="text-primary italic">Tilla</span> (metallic thread-work) define the premium nature of our couture. We utilize only the finest base materials including authentic Pashmina, softest Silks, and regal Velvets.</p>
+</div>
+</div>
+<div class="bg-surface-container-low p-12 flex flex-col justify-center">
+<h3 class="font-label text-[11px] uppercase tracking-[0.2em] mb-4 text-primary font-bold">The Craftsmanship</h3>
+<ul class="space-y-6">
+<li class="flex gap-4">
+<span class="font-headline text-2xl text-primary">01</span>
+<div>
+<p class="font-body font-semibold mb-1">Hand-Selected Fabrics</p>
+<p class="font-body text-sm text-on-surface-variant">Pure silk, velvet, and pashmina sourced directly from weavers.</p>
+</div>
+</li>
+<li class="flex gap-4">
+<span class="font-headline text-2xl text-primary">02</span>
+<div>
+<p class="font-body font-semibold mb-1">Artisan Heritage</p>
+<p class="font-body text-sm text-on-surface-variant">Every stitch is placed by hand in our Srinagar-based atelier.</p>
+</div>
+</li>
+</ul>
+</div>
+</section>
+</main>
+<!-- Luxury Footer -->
+<footer class="bg-surface-container-highest pt-20 pb-12">
+<div class="max-w-[1320px] mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-20">
+<div class="lg:col-span-2">
+<a class="font-headline text-3xl tracking-tight text-primary mb-6 block" href="#">Chinarkari</a>
+<p class="font-body text-on-surface-variant max-w-sm mb-8 leading-relaxed">
+                        Handcrafting the soul of Kashmir into timeless silhouettes. Dedicated to preserving the artisan heritage of the valley.
+                    </p>
+<div class="flex gap-6">
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">public</span></a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">photo_camera</span></a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">share</span></a>
+</div>
+</div>
+<div>
+<h4 class="font-label text-[11px] uppercase tracking-widest font-bold mb-6">Shop</h4>
+<ul class="space-y-4 font-label text-[12px] text-on-surface-variant">
+<li><a class="hover:text-primary transition-colors" href="#">All Products</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Pherans</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Kurta Sets</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Shawls &amp; Stoles</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Velvet Collection</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label text-[11px] uppercase tracking-widest font-bold mb-6">Customer Service</h4>
+<ul class="space-y-4 font-label text-[12px] text-on-surface-variant">
+<li><a class="hover:text-primary transition-colors" href="#">Shipping Policy</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Returns &amp; Exchanges</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Size Guide</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Contact Us</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Track Order</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label text-[11px] uppercase tracking-widest font-bold mb-6">Newsletter</h4>
+<p class="font-body text-xs text-on-surface-variant mb-6 leading-relaxed">
+                        Join our circle for exclusive updates on heritage drops and artisanal stories.
+                    </p>
+<form class="relative">
+<input class="w-full bg-transparent border-b border-outline-variant py-2 pr-10 text-sm focus:outline-none focus:border-primary placeholder:text-outline/60 font-body" placeholder="Your email address" type="email"/>
+<button class="absolute right-0 bottom-2 text-primary" type="submit">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</form>
+</div>
+</div>
+<div class="pt-12 border-t border-outline-variant/20 flex flex-col md:flex-row justify-between items-center gap-6">
+<p class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant">
+                    © 2024 Chinarkari. All Rights Reserved.
+                </p>
+<div class="flex gap-8">
+<a class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant hover:text-primary" href="#">Privacy Policy</a>
+<a class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant hover:text-primary" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
